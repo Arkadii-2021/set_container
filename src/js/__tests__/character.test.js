@@ -4,13 +4,13 @@ import {
   Bowerman, Swordsman, Magician, Daemon, Undead, Zombie,
 } from '../characterRepo';
 
-const bowerman = new Bowerman('bowerman');
-const swordsman = new Swordsman('swordsman');
-const magician = new Magician('magician');
-const magician3 = new Magician('magician3');
-const daemon = new Daemon('daemon');
-const undead = new Undead('undead');
-const zombie = new Zombie('zombie');
+const bowerman = new Bowerman();
+const swordsman = new Swordsman();
+const magician = new Magician();
+const magician3 = new Magician();
+const daemon = new Daemon();
+const undead = new Undead();
+const zombie = new Zombie();
 
 const teamHeroes = new Team();
 
@@ -20,9 +20,6 @@ teamHeroes.add(magician);
 teamHeroes.add(magician3);
 
 teamHeroes.addAll(daemon, undead, zombie);
-
-// console.log(teamHeroes);
-// console.log(teamHeroes.toArray());
 
 const arrCheck = [
   {
